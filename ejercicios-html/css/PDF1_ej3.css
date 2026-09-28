@@ -1,0 +1,33 @@
+caption {
+    font-style: italic;
+}
+
+.tabla1 {
+    border: 3px solid blue;
+    border-spacing: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.tabla1 td {
+    border: 3px solid blue;
+    padding: 25px 30px;
+}
+
+.tabla2 {
+    width: 600px;
+    border: 3px solid #e6c200;
+    border-collapse: collapse;
+}
+
+.tabla2 th,
+.tabla2 td {
+    border: 3px solid #e6c200;
+    background-color: gainsboro;
+    text-align: center;
+    padding: 25px;
+}
+
+.tabla2 .verde td {
+    background-color: yellowgreen;
+}

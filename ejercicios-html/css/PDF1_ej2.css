@@ -1,0 +1,41 @@
+body {
+    background-image: url("../img/flor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 105%;
+    background-attachment: fixed;
+}
+
+h4 {
+    text-align: center;
+    color: orangered;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+}
+
+pre {
+    width: 170px;
+    text-align: center;
+}
+
+#capitulo4 {
+    margin: 600px 40px 0 40px;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    padding: 15px 30px;
+}
+
+.enlace-blanco {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 2px 6px;
+    font-size: 13px;
+}
