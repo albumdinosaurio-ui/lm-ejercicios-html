@@ -1,0 +1,238 @@
+/* ============================================
+   Zoo de Central Park — hoja de estilos básica
+   ============================================ */
+
+:root {
+  --bg: #F6F1E4;          /* fondo general, tono arena */
+  --ink: #23301E;         /* texto principal, verde muy oscuro */
+  --primary: #2F5233;     /* verde bosque — cabecera, botones */
+  --primary-dark: #1E3A21;
+  --accent: #E1A33D;      /* mostaza — detalles y hover */
+  --ice: #5F9AA8;         /* azul hielo — zona polar */
+  --card-bg: #FFFFFF;
+  --closed: #B4544A;      /* rojo apagado — "cerrado" en el horario */
+  --border: #DCD3BC;
+  --radius: 10px;
+  --max-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+h1, h2, h3 {
+  font-family: 'Fredoka', 'Segoe UI', Arial, sans-serif;
+  color: var(--primary-dark);
+  margin-top: 0;
+}
+
+p {
+  max-width: 70ch;
+}
+
+a {
+  color: var(--primary);
+}
+
+/* ---------- Cabecera y navegación ---------- */
+
+.site-header {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.logo {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  color: #EFE9D8;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: #fff;
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- Estructura general ---------- */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+footer {
+  background: var(--primary-dark);
+  color: #C9D2C4;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Portada (index) ---------- */
+
+.hero {
+  background: var(--primary);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 2.8rem 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 2rem;
+  max-width: 20ch;
+}
+
+.hero p {
+  color: #E7E2CF;
+  max-width: 55ch;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background: var(--accent);
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.65rem 1.3rem;
+  border-radius: 999px;
+  transition: transform 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.highlights article {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+}
+
+/* ---------- Página de horario ---------- */
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 720px;
+  background: var(--card-bg);
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  padding: 0.9rem 1rem 0.6rem;
+  color: var(--primary-dark);
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.7rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+thead th {
+  background: var(--primary);
+  color: #fff;
+}
+
+tbody th[scope="row"] {
+  background: #EFE9D8;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+td.closed {
+  background: var(--closed);
+  color: #fff;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.legend {
+  font-size: 0.9rem;
+  color: #4B4536;
+  margin-top: 0.8rem;
+}
+
+/* ---------- Página de animales ---------- */
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+.animal-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.animal-card .emoji {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.animal-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.animal-card p {
+  font-size: 0.92rem;
+  margin: 0;
+}
