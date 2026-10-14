@@ -1,0 +1,45 @@
+.caja {
+    width: 650px;
+    border: 2px solid #4472c4;
+    padding: 15px 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-horizontal {
+    display: inline-block;
+    background-color: #84815b;
+}
+
+.menu-horizontal li {
+    display: inline-block;
+}
+
+.menu-horizontal li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-vertical {
+    display: inline-block;
+    width: 130px;
+}
+
+.menu-vertical li a {
+    display: block;
+    padding: 18px 20px;
+    background-color: #71e83a;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.menu-vertical .activo a {
+    background-color: #ec1d1d;
+}

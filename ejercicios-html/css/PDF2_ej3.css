@@ -1,0 +1,36 @@
+body {
+    background-color: #eeeeee;
+    padding: 20px;
+    background-image: url("../img/letrasFondo.jpeg"); 
+}
+
+.bloque-div {
+    background-color: rgba(90, 107, 125, 0.75);
+    color: white;
+    padding: 25px 35px;
+    margin-bottom: 30px;
+}
+
+.bloque-div h2 {
+    margin-top: 0;
+}
+
+.bloque-span {
+    background-color: rgba(214, 201, 150, 0.75);
+    padding: 20px 35px;
+}
+
+.resaltado {
+    background-color: violet;
+}
+
+.negrita-recuadro {
+    font-weight: bold;
+    border: 2px solid #5e8f5e;
+    padding: 0 4px;
+}
+
+.resaltado-blanco {
+    background-color: white;
+    font-style: italic;
+}

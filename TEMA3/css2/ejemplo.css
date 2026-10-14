@@ -1,0 +1,18 @@
+*{
+
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+button{
+    background-color: #c00e0e; 
+    color: rgb(211, 251, 9);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_resta{
+    background-color: #120dae;
+}
