@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #41197e;
+}   
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #f7f5f5;
+    margin-top: 20px;
+    background-color: #d20da4;
+}
+
+h1 {
+    color: #e1f006;
+    margin-top: 20px;
+}
+h2 {
+    color: #fdfdfd;
+    margin-top: 10px;
+}
+p {
+    color: #fdfdfd;
+    margin-top: 10px;
+}
+
